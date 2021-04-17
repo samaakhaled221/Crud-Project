@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Crud System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class=" container layer mt-4 mb-3">
+    <h1 class="font-weight-bolder text-center pt-5">CRUD System</h1>
+    
+     <div class="container py-5"> 
+
+        <div class="form-group">
+
+            <label for="productNameInput">Product Name :</label>
+            <input class="form-control" type="text" id="productNameInput">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="productPriceInput">Product Price :</label>
+            <input class="form-control" type="number" id="productPriceInput">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="ProductCategoryInput">Product Category :</label>
+            <input class="form-control" type="text" id="ProductCategoryInput">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="productDescInput">Product Description :</label>
+            <textarea class="form-control" type="text" id="productDescInput"></textarea>
+        </div>
+
+
+
+        <button id="mainBtn" onclick="addProduct()" class="btn btn-warning">Add Product</button>
+
+    </div>
+
+    <div class="container">
+
+        <input onkeyup="searchProduct(this.value)" placeholder="search product" class="form-control w-75 m-auto" type="text" name="" id="">
+
+        <table class=" table  w-100 mt-4 ">
+            <thead>
+                <th>index</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Desc</th>
+                <th>Update</th>
+                <th>Delete</th>
+
+            </thead>
+            <tbody  class=""  id="tableBody">
+
+            </tbody>
+        </table>
+        <div class="h2 m-auto text-center p-3 " id="notfound" >
+        </div>
+    </div>
+    </div> 
+    <script src="script.js"></script>
+
+</body>
+
+</html>

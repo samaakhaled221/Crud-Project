@@ -1,0 +1,26 @@
+
+body
+{
+    color: #f3f4ed;
+    background-image: url(../image/Download\ free\ illustration\ of\ Light\ gray\ abstract\ background\ wallpaper.jfif);
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+h1
+{
+    font-family: 'PT Serif', serif;
+    font-size: 3rem;
+}
+.layer
+{
+  
+   background-color: rgba(25, 67, 80, 0.8)	;
+   border-radius: 20px;
+   
+}
+.table
+{
+    color: #f3f4ed;
+
+}
